@@ -2,9 +2,115 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 * ul {
   list-style-type: none;
+}
+
+* a {
+  text-decoration: none;
+}
+
+.logo {
+  position: relative;
+}
+
+.logo .arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 26px solid #33323d;
+  position: absolute;
+  top: -4px;
+}
+
+.logo .arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 26px solid #33323d;
+  position: absolute;
+  left: 28px;
+  top: 4px;
+}
+
+body {
+  font-family: Public Sans;
+  background-color: #eaeaeb;
+  color: #33323d;
+}
+
+h1,
+h2 {
+  font-family: Ibarra Real Nova;
+  color: #203a4c;
+  font-size: 42px;
+}
+
+.container {
+  margin-inline: 1.3rem;
+  border: 1px solid red;
+}
+
+.navbar {
+  margin-top: 2rem;
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+.hero {
+  margin-top: 2.5rem;
+}
+
+.hero .hero-img {
+  width: 100%;
+}
+
+.hero .welcome-text {
+  margin-top: 1.3rem;
+  margin-bottom: 2rem;
+  line-height: 93%;
+}
+
+.about-me {
+  background-color: #203a4c;
+  width: 12.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-me .arrows {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.about-me .about-me-text {
+  color: white;
+  margin-inline: auto;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
 }
 /*# sourceMappingURL=styles.css.map */

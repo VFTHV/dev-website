@@ -2,8 +2,13 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   ul {
     list-style-type: none;
+  }
+  a {
+    text-decoration: none;
   }
 }
 
@@ -16,3 +21,96 @@ $grayishDarkBlue: #33323d;
 $veryLightGrey: #fafafa;
 $lightGrey: #eaeaeb;
 $brightRed: #f43030;
+$ibarra: Ibarra Real Nova;
+$public-sans: Public Sans;
+
+// logo at the top-left of the page
+.logo {
+  position: relative;
+  .arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 26px solid $grayishDarkBlue;
+    position: absolute;
+    top: -4px;
+  }
+
+  .arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 26px solid $grayishDarkBlue;
+    position: absolute;
+    left: 28px;
+    top: 4px;
+  }
+}
+body {
+  font-family: $public-sans;
+  background-color: $lightGrey;
+  color: $grayishDarkBlue;
+}
+
+h1,
+h2 {
+  font-family: $ibarra;
+  color: $darkBlue;
+  font-size: 42px;
+}
+
+.container {
+  margin-inline: 1.3rem;
+  border: 1px solid red;
+}
+
+.navbar {
+  margin-top: 2rem;
+  nav {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    place-content: space-between;
+  }
+
+  .mobile-menu {
+    cursor: pointer;
+  }
+}
+
+.hero {
+  margin-top: 2.5rem;
+  .hero-img {
+    width: 100%;
+  }
+
+  .welcome-text {
+    margin-top: 1.3rem;
+    margin-bottom: 2rem;
+    line-height: 93%;
+  }
+}
+
+.about-me {
+  background-color: $darkBlue;
+  width: 12.5rem;
+  display: flex;
+  align-items: center;
+
+  .arrows {
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .about-me-text {
+    color: white;
+    margin-inline: auto;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+}
