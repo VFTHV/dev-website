@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500;700&family=Public+Sans:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500;800&family=Public+Sans:wght@400;500;700&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -50,19 +50,44 @@ h2 {
   font-family: Ibarra Real Nova;
   color: #203a4c;
   font-size: 42px;
+  font-weight: 800;
 }
 
 .container {
   margin-inline: 1.3rem;
-  border: 1px solid red;
+}
+
+#nav {
+  display: none;
+  position: fixed;
+  top: 5rem;
+  right: 0;
+  margin-right: 1.3rem;
+}
+
+#nav .mobile-menu-exit {
+  float: right;
+}
+
+#nav .nav-links {
+  background-color: #33323d;
+  padding: 1rem 4rem;
+}
+
+#nav .nav-links li {
+  text-align: center;
+  margin-block: 1rem;
+}
+
+#nav .nav-links li a {
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 12px;
 }
 
 .navbar {
   margin-top: 2rem;
-}
-
-.navbar nav {
-  display: none;
 }
 
 .navbar .container {
@@ -74,6 +99,13 @@ h2 {
 
 .navbar .mobile-menu {
   cursor: pointer;
+  height: 13px;
+}
+
+.navbar .mobile-menu-exit {
+  display: none;
+  height: 18px;
+  width: 18px;
 }
 
 .hero {
@@ -90,7 +122,7 @@ h2 {
   line-height: 93%;
 }
 
-.about-me {
+.about-me-link {
   background-color: #203a4c;
   width: 12.5rem;
   display: -webkit-box;
@@ -101,16 +133,99 @@ h2 {
           align-items: center;
 }
 
-.about-me .arrows {
+.about-me-link .arrows {
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.about-me .about-me-text {
+.about-me-link .about-me-text {
   color: white;
   margin-inline: auto;
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 2px;
+}
+
+.main .container {
+  margin-top: 5rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+}
+
+.main .main-pic {
+  margin-bottom: 2rem;
+  border-bottom: 1;
+}
+
+.main .main-pic img {
+  width: 100%;
+}
+
+.main .about-me-text {
+  padding-top: 2rem;
+  margin-block: 2rem;
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+}
+
+.main .about-me-text h2 {
+  margin-bottom: 2rem;
+}
+
+.main .about-me-text p {
+  line-height: 30px;
+  color: rgba(51, 50, 61, 0.8);
+}
+
+.main-cta {
+  padding: 1rem 2rem;
+  display: inline-block;
+  border: 1px solid #33323d;
+  color: #33323d;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.cooperation {
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.cooperation h2 {
+  margin-bottom: 2rem;
+}
+
+.footer {
+  padding-block: 3rem;
+  background-color: #33323d;
+}
+
+.footer .secondary-navigation {
+  text-align: center;
+}
+
+.footer .secondary-navigation .nav-links li {
+  padding-block: 1rem;
+}
+
+.footer .secondary-navigation .nav-links li a {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.footer .secondary-navigation .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1rem;
+}
+
+.footer .secondary-navigation .social-links li {
+  margin-inline: 0.5rem;
 }
 /*# sourceMappingURL=styles.css.map */
