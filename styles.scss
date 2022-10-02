@@ -34,7 +34,7 @@ h1,
 h2 {
   font-family: $ibarra;
   color: $darkBlue;
-  font-size: 42px;
+  font-size: 40px;
   font-weight: 800;
 }
 
@@ -98,7 +98,7 @@ h2 {
   .welcome-text {
     margin-top: 1.3rem;
     margin-bottom: 2rem;
-    line-height: 93%;
+    line-height: 40px;
   }
 }
 
@@ -288,6 +288,7 @@ h2 {
 
       h2 {
         text-align: start;
+        margin-bottom: 0;
       }
 
       .cross-line {
@@ -299,7 +300,85 @@ h2 {
 
       .cta-div {
         margin-block: auto;
+        text-align: end;
       }
     }
+  }
+  .footer {
+    padding-block: 3rem;
+
+    .secondary-navigation {
+      display: flex;
+      justify-content: space-between;
+
+      .nav-links {
+        display: flex;
+
+        li {
+          padding-block: unset;
+          margin-block: auto;
+          margin-inline: 1rem;
+        }
+      }
+      .social-links {
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+        li {
+          margin-inline: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .container {
+    margin-inline: 10.3rem;
+  }
+
+  .hero {
+    .container {
+      .welcome-block {
+        background-color: $veryLightGrey;
+        width: 40%;
+        padding-top: 3rem;
+
+        .welcome-text {
+          font-size: 50px;
+          width: 80%;
+          margin-bottom: 4rem;
+          line-height: 50px;
+        }
+      }
+    }
+  }
+  .main {
+    .container {
+      display: flex;
+      gap: 8rem;
+
+      .main-pic {
+        flex-grow: 1;
+      }
+      .about-me-info {
+        flex-grow: 0.6;
+        margin-right: 6rem;
+      }
+    }
+  }
+  .cooperation {
+    .container {
+      grid-template-columns: 0.8fr 0.9fr 0.46fr;
+      grid-column-gap: 1rem;
+    }
+  }
+
+  .about-me-link:hover {
+    background-color: $cyan;
+  }
+  .main-cta:hover {
+    background-color: $grayishDarkBlue;
+    color: $lightGrey;
   }
 }
