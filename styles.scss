@@ -24,33 +24,9 @@ $brightRed: #f43030;
 $ibarra: Ibarra Real Nova;
 $public-sans: Public Sans;
 
-// logo at the top-left of the page
-.logo {
-  position: relative;
-  .arrow-up {
-    width: 0;
-    height: 0;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-bottom: 26px solid $grayishDarkBlue;
-    position: absolute;
-    top: -4px;
-  }
-
-  .arrow-down {
-    width: 0;
-    height: 0;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-top: 26px solid $grayishDarkBlue;
-    position: absolute;
-    left: 28px;
-    top: 4px;
-  }
-}
 body {
   font-family: $public-sans;
-  background-color: $lightGrey;
+  background-color: $veryLightGrey;
   color: $grayishDarkBlue;
 }
 
@@ -108,8 +84,8 @@ h2 {
   }
   .mobile-menu-exit {
     display: none;
-    height: 18px;
-    width: 18px;
+    height: 24px;
+    width: 24px;
   }
 }
 
@@ -150,21 +126,21 @@ h2 {
   .container {
     margin-top: 5rem;
     padding-bottom: 3rem;
-    border-bottom: 1px solid rgba(51, 50, 61, 0.15);
   }
 
   .main-pic {
     margin-bottom: 2rem;
-    border-bottom: 1;
+
     img {
       width: 100%;
     }
   }
 
-  .about-me-text {
-    padding-top: 2rem;
-    margin-block: 2rem;
+  .about-me-info {
+    padding-block: 2rem;
+
     border-top: 1px solid rgba(51, 50, 61, 0.15);
+    border-bottom: 1px solid rgba(51, 50, 61, 0.15);
 
     h2 {
       margin-bottom: 2rem;
@@ -172,6 +148,7 @@ h2 {
     p {
       line-height: 30px;
       color: rgba(51, 50, 61, 0.8);
+      margin-bottom: 1.5rem;
     }
   }
 }
@@ -219,6 +196,109 @@ h2 {
       margin-top: 1rem;
       li {
         margin-inline: 0.5rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    margin-inline: 2.5rem;
+  }
+
+  .navbar {
+    margin-top: 4rem;
+  }
+
+  .mobile-menu,
+  .mobile-menu-exit {
+    display: none;
+  }
+
+  #nav {
+    display: initial;
+    position: unset;
+    margin-right: 0;
+
+    .nav-links {
+      background-color: unset;
+      padding: unset;
+      width: 20rem;
+      display: flex;
+      justify-content: space-between;
+
+      li {
+        text-align: unset;
+        margin-block: unset;
+
+        a {
+          color: $grayishDarkBlue;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .hero {
+    .container {
+      position: relative;
+
+      .welcome-block {
+        position: absolute;
+        bottom: 0;
+        background-color: $veryLightGrey;
+        width: 70%;
+        padding-top: 3rem;
+
+        .welcome-text {
+          width: 80%;
+          margin-bottom: 4rem;
+        }
+      }
+    }
+  }
+  .main {
+    .container {
+      display: flex;
+      gap: 4rem;
+
+      .main-pic {
+        margin-bottom: 0;
+
+        img {
+          height: 100%;
+          object-fit: cover;
+          object-position: 80% 0%;
+        }
+      }
+    }
+    .container > * {
+      flex: 2;
+    }
+  }
+
+  .cooperation {
+    .container {
+      display: grid;
+      grid-template-columns: 0.9fr 0.32fr 0.46fr;
+      grid-template-rows: 1fr;
+      grid-column-gap: 2rem;
+      grid-row-gap: 0px;
+
+      h2 {
+        text-align: start;
+      }
+
+      .cross-line {
+        width: 100%;
+        margin-block: auto;
+        height: 0;
+        border-top: 1px solid rgba(51, 50, 61, 0.15);
+      }
+
+      .cta-div {
+        margin-block: auto;
       }
     }
   }

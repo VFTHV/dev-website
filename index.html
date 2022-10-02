@@ -64,18 +64,20 @@
             /images/homepage/mobile/image-homepage-hero.jpg    311w
           "
         />
-        <h1 class="welcome-text">
-          Hey, I’m Alex Spencer and I love building beautiful websites
-        </h1>
+        <div class="welcome-block">
+          <h1 class="welcome-text">
+            Hey, I’m Alex Spencer and I love building beautiful websites
+          </h1>
 
-        <a href="#about-me">
-          <div class="about-me-link">
-            <div class="arrows">
-              <img src="/images/icons/down-arrows.svg" alt="down-arrows" />
+          <a href="#about-me">
+            <div class="about-me-link">
+              <div class="arrows">
+                <img src="/images/icons/down-arrows.svg" alt="down-arrows" />
+              </div>
+              <div class="about-me-text">About Me</div>
             </div>
-            <div class="about-me-text">About Me</div>
-          </div>
-        </a>
+          </a>
+        </div>
       </div>
     </section>
     <main class="main">
@@ -90,7 +92,7 @@
             "
           />
         </div>
-        <article class="about-me-text">
+        <article class="about-me-info">
           <h2 id="about-me">About Me</h2>
           <p>
             I’m a junior front-end developer looking for a new role in an
@@ -102,14 +104,17 @@
             find me outdoors. I love being out in nature whether that’s going
             for a walk, run or cycling. I’d love you to check out my work.
           </p>
+          <a class="main-cta" href="#">Go To Portfolio</a>
         </article>
-        <a class="main-cta" href="#">Go To Portfolio</a>
       </div>
     </main>
     <section class="cooperation">
       <div class="container">
         <h2>Interested in doing a project together?</h2>
-        <a class="main-cta" href="#">Contact Me</a>
+        <div class="cross-line"></div>
+        <div class="cta-div">
+          <a class="main-cta" href="#">Contact Me</a>
+        </div>
       </div>
     </section>
     <footer class="footer">
@@ -174,8 +179,8 @@
     </footer>
     <script>
       const mobileBtn = document.getElementById("mobile-cta");
-      const nav = document.querySelector("#nav");
       const mobileBtnExit = document.getElementById("mobile-exit");
+      const nav = document.querySelector("#nav");
 
       mobileBtn.addEventListener("click", () => {
         nav.style.display = "block";
@@ -187,6 +192,14 @@
         nav.style.display = "none";
         mobileBtn.style.display = "block";
         mobileBtnExit.style.display = "none";
+      });
+
+      window.addEventListener("click", (e) => {
+        if (!nav.contains(e.target) && !mobileBtn.contains(e.target)) {
+          nav.style.display = "none";
+          mobileBtn.style.display = "block";
+          mobileBtnExit.style.display = "none";
+        }
       });
     </script>
   </body>
