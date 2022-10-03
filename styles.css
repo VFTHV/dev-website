@@ -170,6 +170,7 @@ p {
   font-size: 12px;
   letter-spacing: 2px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .cooperation {
@@ -270,6 +271,19 @@ p {
 .contact-form .form-item input::placeholder,
 .contact-form .form-item textarea::placeholder {
   font-family: Public Sans;
+}
+
+.contact-form .form-item input:focus,
+.contact-form .form-item textarea:focus {
+  outline: solid 1px #5fb4a2;
+}
+
+.form-error::after {
+  content: "This field is required";
+  font-size: 10px;
+  font-weight: 800;
+  font-style: italic;
+  color: #f43030;
 }
 
 @media only screen and (min-width: 768px) {
@@ -404,6 +418,16 @@ p {
   .footer .secondary-navigation .social-links li {
     margin-inline: 0.8rem;
   }
+  .about-me-link:hover {
+    background-color: #5fb4a2;
+  }
+  .main-cta:hover {
+    background-color: #33323d;
+    color: #eaeaeb;
+  }
+  .secondary-cta:hover {
+    background-color: #5fb4a2;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -442,13 +466,6 @@ p {
     -ms-grid-columns: 0.8fr 0.9fr 0.46fr;
         grid-template-columns: 0.8fr 0.9fr 0.46fr;
     grid-column-gap: 1rem;
-  }
-  .about-me-link:hover {
-    background-color: #5fb4a2;
-  }
-  .main-cta:hover {
-    background-color: #33323d;
-    color: #eaeaeb;
   }
 }
 /*# sourceMappingURL=styles.css.map */

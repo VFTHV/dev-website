@@ -177,6 +177,7 @@ p {
   font-size: 12px;
   letter-spacing: 2px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .cooperation {
@@ -247,7 +248,27 @@ p {
       &::placeholder {
         font-family: $public-sans;
       }
+      &:focus {
+        outline: solid 1px $cyan;
+      }
     }
+  }
+}
+// .form-item[data-error]::after {
+//   content: attr(data-error);
+//   font-size: 10px;
+//   font-weight: 800;
+//   font-style: italic;
+//   color: $brightRed;
+// }
+
+.form-error {
+  &::after {
+    content: "This field is required";
+    font-size: 10px;
+    font-weight: 800;
+    font-style: italic;
+    color: $brightRed;
   }
 }
 
@@ -383,6 +404,16 @@ p {
       }
     }
   }
+  .about-me-link:hover {
+    background-color: $cyan;
+  }
+  .main-cta:hover {
+    background-color: $grayishDarkBlue;
+    color: $lightGrey;
+  }
+  .secondary-cta:hover {
+    background-color: $cyan;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -425,13 +456,5 @@ p {
       grid-template-columns: 0.8fr 0.9fr 0.46fr;
       grid-column-gap: 1rem;
     }
-  }
-
-  .about-me-link:hover {
-    background-color: $cyan;
-  }
-  .main-cta:hover {
-    background-color: $grayishDarkBlue;
-    color: $lightGrey;
   }
 }

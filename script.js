@@ -17,3 +17,19 @@ window.addEventListener("click", (e) => {
     nav.classList.remove("visible");
   }
 });
+
+// document.querySelectorAll(".form-item[data-error] input").forEach((inpEl) => {
+//   inpEl.addEventListener("input", () =>
+//     inpEl.parentElement.removeAttribute("data-error")
+//   );
+// });
+
+document.querySelectorAll(".form-item .input-element").forEach((inpEl) => {
+  inpEl.addEventListener("input", () => {
+    if (inpEl.value.trim() === "") {
+      inpEl.parentElement.classList.add("form-error");
+    } else {
+      inpEl.parentElement.classList.remove("form-error");
+    }
+  });
+});
