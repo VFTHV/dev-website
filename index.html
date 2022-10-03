@@ -11,6 +11,7 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
     <title>Vadim F. Web Developer</title>
   </head>
   <body>
@@ -37,18 +38,19 @@
           src="images/icons/hamburger.svg"
           alt="Open Navigation"
         />
-        <img
-          src="/images/icons/close.svg"
-          class="mobile-menu-exit"
-          id="mobile-exit"
-          alt="Close Navigation"
-        />
 
         <nav id="nav" aria-label="primary-navigation">
+          <div class="mobile-menu-exit">
+            <img
+              src="/images/icons/close.svg"
+              id="mobile-exit"
+              alt="Close Navigation"
+            />
+          </div>
           <ul class="nav-links">
-            <li><a href="">Home</a></li>
+            <li><a class="active" href="">Home</a></li>
             <li><a href="">Portfolio</a></li>
-            <li><a href="">Contact Me</a></li>
+            <li><a href="./contact.html">Contact Me</a></li>
           </ul>
         </nav>
       </div>
@@ -56,7 +58,7 @@
     <section class="hero">
       <div class="container">
         <img
-          src="/images/homepage/mobile/image-homepage-hero.jpg"
+          src="./images/homepage/mobile/image-homepage-hero.jpg"
           class="hero-img"
           alt="hero image"
           srcset="
@@ -145,7 +147,7 @@
           <ul class="nav-links">
             <li><a href="">Home</a></li>
             <li><a href="">Portfolio</a></li>
-            <li><a href="">Contact Me</a></li>
+            <li><a href="./contact.html">Contact Me</a></li>
           </ul>
           <ul class="social-links">
             <li>
@@ -186,30 +188,5 @@
         </nav>
       </div>
     </footer>
-    <script>
-      const mobileBtn = document.getElementById("mobile-cta");
-      const mobileBtnExit = document.getElementById("mobile-exit");
-      const nav = document.querySelector("#nav");
-
-      mobileBtn.addEventListener("click", () => {
-        nav.style.display = "block";
-        mobileBtn.style.display = "none";
-        mobileBtnExit.style.display = "block";
-      });
-
-      mobileBtnExit.addEventListener("click", () => {
-        nav.style.display = "none";
-        mobileBtn.style.display = "block";
-        mobileBtnExit.style.display = "none";
-      });
-
-      window.addEventListener("click", (e) => {
-        if (!nav.contains(e.target) && !mobileBtn.contains(e.target)) {
-          nav.style.display = "none";
-          mobileBtn.style.display = "block";
-          mobileBtnExit.style.display = "none";
-        }
-      });
-    </script>
   </body>
 </html>
