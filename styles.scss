@@ -129,7 +129,7 @@ nav.visible {
 .main {
   .container {
     margin-top: 5rem;
-    padding-bottom: 3rem;
+    margin-bottom: 3rem;
   }
 
   .main-pic {
@@ -413,6 +413,9 @@ p {
     &:nth-child(even) {
       flex-direction: row-reverse;
     }
+    .main-pic {
+      padding-block: 3rem;
+    }
   }
 }
 
@@ -448,6 +451,10 @@ p {
       .main-text {
         flex-grow: 0.6;
         margin-right: 6rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
       }
     }
   }

@@ -124,7 +124,7 @@ nav.visible {
 
 .main .container {
   margin-top: 5rem;
-  padding-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 .main .main-pic {
@@ -435,6 +435,9 @@ p {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
+  .portfolio .container .main-pic {
+    padding-block: 3rem;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -468,6 +471,19 @@ p {
         -ms-flex-positive: 0.6;
             flex-grow: 0.6;
     margin-right: 6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .cooperation .container {
     -ms-grid-columns: 0.8fr 0.9fr 0.46fr;
