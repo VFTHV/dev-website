@@ -140,7 +140,7 @@ nav.visible {
     }
   }
 
-  .about-me-info {
+  .main-text {
     padding-block: 2rem;
 
     border-top: 1px solid rgba(51, 50, 61, 0.15);
@@ -254,13 +254,6 @@ p {
     }
   }
 }
-// .form-item[data-error]::after {
-//   content: attr(data-error);
-//   font-size: 10px;
-//   font-weight: 800;
-//   font-style: italic;
-//   color: $brightRed;
-// }
 
 .form-error {
   &::after {
@@ -297,6 +290,7 @@ p {
       width: 20rem;
       display: flex;
       justify-content: space-between;
+      margin-top: 0;
 
       li {
         text-align: unset;
@@ -414,6 +408,12 @@ p {
   .secondary-cta:hover {
     background-color: $cyan;
   }
+
+  .portfolio .container {
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -445,7 +445,7 @@ p {
       .main-pic {
         flex-grow: 1;
       }
-      .about-me-info {
+      .main-text {
         flex-grow: 0.6;
         margin-right: 6rem;
       }

@@ -135,13 +135,13 @@ nav.visible {
   width: 100%;
 }
 
-.main .about-me-info {
+.main .main-text {
   padding-block: 2rem;
   border-top: 1px solid rgba(51, 50, 61, 0.15);
   border-bottom: 1px solid rgba(51, 50, 61, 0.15);
 }
 
-.main .about-me-info h2 {
+.main .main-text h2 {
   margin-bottom: 2rem;
 }
 
@@ -312,6 +312,7 @@ p {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin-top: 0;
   }
   #nav .nav-links li {
     text-align: unset;
@@ -428,6 +429,12 @@ p {
   .secondary-cta:hover {
     background-color: #5fb4a2;
   }
+  .portfolio .container:nth-child(even) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -456,7 +463,7 @@ p {
         -ms-flex-positive: 1;
             flex-grow: 1;
   }
-  .main .container .about-me-info {
+  .main .container .main-text {
     -webkit-box-flex: 0.6;
         -ms-flex-positive: 0.6;
             flex-grow: 0.6;
