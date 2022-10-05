@@ -30,15 +30,29 @@ body {
   color: $grayishDarkBlue;
 }
 
-h1,
-h2 {
+.h1 {
   font-family: $ibarra;
   font-size: 40px;
   font-weight: 800;
+  margin-block: 2rem;
+}
+.h2,
+.h3 {
+  font-family: $ibarra;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: -0.36px;
+  margin-block: 1rem;
 }
 
 .container {
   margin-inline: 1.5rem;
+}
+
+.borders {
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
 }
 
 .navbar {
@@ -141,16 +155,10 @@ nav.visible {
   }
 
   .main-text {
-    padding-block: 2rem;
-
-    border-top: 1px solid rgba(51, 50, 61, 0.15);
-    border-bottom: 1px solid rgba(51, 50, 61, 0.15);
-
-    h2 {
-      margin-bottom: 2rem;
-    }
+    padding-bottom: 2rem;
   }
 }
+
 p {
   line-height: 30px;
   color: rgba(51, 50, 61, 0.8);
@@ -159,6 +167,7 @@ p {
 
 .main-cta {
   padding: 1rem 2rem;
+  margin-block: 1rem;
 
   display: inline-block;
   border: 1px solid $grayishDarkBlue;
@@ -181,11 +190,10 @@ p {
 }
 
 .cooperation {
-  margin-top: 6rem;
-  margin-bottom: 4rem;
+  margin-block: 4rem;
   text-align: center;
   h2 {
-    margin-bottom: 2rem;
+    font-weight: 800;
   }
 }
 
@@ -223,8 +231,6 @@ p {
 .main-contact-me {
   .container {
     padding-block: 1rem;
-    border-top: 1px solid rgba(51, 50, 61, 0.15);
-    border-bottom: 1px solid rgba(51, 50, 61, 0.15);
   }
   p {
     margin-block: 1rem;
@@ -262,6 +268,52 @@ p {
     font-weight: 800;
     font-style: italic;
     color: $brightRed;
+  }
+}
+
+.proj-descr {
+  .preview-items {
+    margin-block: 3rem;
+    img {
+      width: 100%;
+      margin-block: 1rem;
+    }
+  }
+}
+
+.secondary-nav {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    .nav-item {
+      width: 50%;
+
+      a {
+        display: block;
+
+        color: $grayishDarkBlue;
+        padding-block: 1rem;
+        cursor: pointer;
+        p {
+          margin-bottom: unset;
+        }
+      }
+    }
+    .reverse {
+      text-align: end;
+      border-left: 1px solid rgba(51, 50, 61, 0.15);
+    }
+  }
+}
+
+.portf-detail-main {
+  .container {
+    // padding-block: 1rem;
+  }
+  .aside {
+    font-size: 13px;
+    color: $cyan;
+    line-height: 30px;
   }
 }
 
@@ -346,6 +398,30 @@ p {
     }
   }
 
+  .portf-detail-main {
+    .portf-detail-text {
+      display: grid;
+      grid-template-columns: 0.8fr 1fr;
+      grid-template-rows: 1fr repeat(2, 0.5fr);
+      grid-column-gap: 4rem;
+      grid-row-gap: 0px;
+    }
+
+    .h1 {
+      grid-area: 1 / 1 / 2 / 2;
+    }
+    .aside {
+      grid-area: 2 / 1 / 3 / 2;
+    }
+    .action {
+      grid-area: 3 / 1 / 4 / 2;
+    }
+    p {
+      grid-area: 1 / 2 / 4 / 3;
+      margin-block: auto;
+    }
+  }
+
   .cooperation {
     .container {
       display: grid;
@@ -363,7 +439,6 @@ p {
         width: 100%;
         margin-block: auto;
         height: 0;
-        border-top: 1px solid rgba(51, 50, 61, 0.15);
       }
 
       .cta-div {
