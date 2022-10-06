@@ -46,6 +46,30 @@ body {
   border-bottom: 1px solid rgba(51, 50, 61, 0.15);
 }
 
+.m-bl-1 {
+  margin-block: 1rem;
+}
+
+.m-bl-2 {
+  margin-block: 2rem;
+}
+
+.m-bl-3 {
+  margin-block: 3rem;
+}
+
+.p-bl-1 {
+  padding-block: 1rem;
+}
+
+.p-bl-2 {
+  padding-block: 2rem;
+}
+
+.p-bl-3 {
+  padding-block: 3rem;
+}
+
 .navbar {
   margin-block: 2.5rem;
 }
@@ -293,16 +317,11 @@ p {
   color: #f43030;
 }
 
-.proj-descr .preview-items {
-  margin-block: 3rem;
-}
-
 .proj-descr .preview-items img {
   width: 100%;
-  margin-block: 1rem;
 }
 
-.secondary-nav .container {
+.portfolio-nav .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -311,22 +330,21 @@ p {
           justify-content: space-between;
 }
 
-.secondary-nav .container .nav-item {
+.portfolio-nav .container .nav-item {
   width: 50%;
 }
 
-.secondary-nav .container .nav-item a {
+.portfolio-nav .container .nav-item a {
   display: block;
   color: #33323d;
-  padding-block: 1rem;
   cursor: pointer;
 }
 
-.secondary-nav .container .nav-item a p {
+.portfolio-nav .container .nav-item a p {
   margin-bottom: unset;
 }
 
-.secondary-nav .container .reverse {
+.portfolio-nav .container .reverse {
   text-align: end;
   border-left: 1px solid rgba(51, 50, 61, 0.15);
 }
@@ -335,6 +353,7 @@ p {
   font-size: 13px;
   color: #5fb4a2;
   line-height: 30px;
+  font-weight: 800;
 }
 
 @media only screen and (min-width: 768px) {
@@ -470,6 +489,7 @@ p {
     width: 100%;
     margin-block: auto;
     height: 0;
+    border-top: 1px solid rgba(51, 50, 61, 0.15);
   }
   .cooperation .container .cta-div {
     margin-block: auto;
@@ -527,11 +547,32 @@ p {
   .portfolio .container .main-pic {
     padding-block: 3rem;
   }
+  .portfolio-nav .nav-item .layout {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2rem;
+  }
+  .portfolio-nav .nav-item .reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .portfolio-nav .nav-item p {
+    margin-bottom: unset;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
   .container {
     margin-inline: 10.3rem;
+  }
+  .hero .container {
+    padding-bottom: 3rem;
   }
   .hero .container .welcome-block {
     background-color: #fafafa;
@@ -578,6 +619,27 @@ p {
     -ms-grid-columns: 0.8fr 0.9fr 0.46fr;
         grid-template-columns: 0.8fr 0.9fr 0.46fr;
     grid-column-gap: 1rem;
+  }
+  .portf-detail-main .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 8rem;
+  }
+  .portf-detail-main .portf-detail-text {
+    display: unset;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+  .portf-detail-main .aside {
+    font-size: 16px;
+  }
+  .portf-detail-main p {
+    margin-block: 1rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

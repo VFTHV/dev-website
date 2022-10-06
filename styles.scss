@@ -55,6 +55,26 @@ body {
   border-bottom: 1px solid rgba(51, 50, 61, 0.15);
 }
 
+.m-bl-1 {
+  margin-block: 1rem;
+}
+.m-bl-2 {
+  margin-block: 2rem;
+}
+.m-bl-3 {
+  margin-block: 3rem;
+}
+
+.p-bl-1 {
+  padding-block: 1rem;
+}
+.p-bl-2 {
+  padding-block: 2rem;
+}
+.p-bl-3 {
+  padding-block: 3rem;
+}
+
 .navbar {
   margin-block: 2.5rem;
 
@@ -273,15 +293,13 @@ p {
 
 .proj-descr {
   .preview-items {
-    margin-block: 3rem;
     img {
       width: 100%;
-      margin-block: 1rem;
     }
   }
 }
 
-.secondary-nav {
+.portfolio-nav {
   .container {
     display: flex;
     justify-content: space-between;
@@ -290,9 +308,7 @@ p {
 
       a {
         display: block;
-
         color: $grayishDarkBlue;
-        padding-block: 1rem;
         cursor: pointer;
         p {
           margin-bottom: unset;
@@ -307,13 +323,11 @@ p {
 }
 
 .portf-detail-main {
-  .container {
-    // padding-block: 1rem;
-  }
   .aside {
     font-size: 13px;
     color: $cyan;
     line-height: 30px;
+    font-weight: 800;
   }
 }
 
@@ -439,6 +453,7 @@ p {
         width: 100%;
         margin-block: auto;
         height: 0;
+        border-top: 1px solid rgba(51, 50, 61, 0.15);
       }
 
       .cta-div {
@@ -492,6 +507,22 @@ p {
       padding-block: 3rem;
     }
   }
+  .portfolio-nav {
+    .nav-item {
+      .layout {
+        display: flex;
+        align-items: center;
+
+        gap: 2rem;
+      }
+      .reverse {
+        flex-direction: row-reverse;
+      }
+      p {
+        margin-bottom: unset;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -501,6 +532,7 @@ p {
 
   .hero {
     .container {
+      padding-bottom: 3rem;
       .welcome-block {
         background-color: $veryLightGrey;
         width: 40%;
@@ -537,6 +569,23 @@ p {
     .container {
       grid-template-columns: 0.8fr 0.9fr 0.46fr;
       grid-column-gap: 1rem;
+    }
+  }
+  .portf-detail-main {
+    .container {
+      display: flex;
+      gap: 8rem;
+    }
+    .portf-detail-text {
+      display: unset;
+      justify-content: space-between;
+      align-self: start;
+    }
+    .aside {
+      font-size: 16px;
+    }
+    p {
+      margin-block: 1rem;
     }
   }
 }
