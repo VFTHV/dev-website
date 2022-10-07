@@ -176,6 +176,13 @@ p {
   color: rgba(51, 50, 61, 0.8);
 }
 
+.list-styled {
+  line-height: 30px;
+  color: rgba(51, 50, 61, 0.8);
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
 .main-cta {
   padding: 1rem 2rem;
   margin-block: 1rem;

@@ -8,28 +8,28 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="../images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./styles.css" />
-    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <script src="../scripts/script.js" defer></script>
 
     <title>Vadim F. Web Developer</title>
   </head>
   <body>
     <header class="navbar">
       <div class="container">
-        <img src="./images/icons/logo.svg" alt="Logo Image" />
+        <img src="../images/icons/logo.svg" alt="Logo Image" />
         <img
           id="mobile-cta"
           class="mobile-menu"
-          src="images/icons/hamburger.svg"
+          src="../images/icons/hamburger.svg"
           alt="Open Navigation"
         />
 
         <nav id="nav" aria-label="primary-navigation">
           <div class="mobile-menu-exit">
             <img
-              src="/images/icons/close.svg"
+              src="../images/icons/close.svg"
               id="mobile-exit"
               alt="Close Navigation"
             />
@@ -42,20 +42,20 @@
         </nav>
       </div>
     </header>
-    <section class="hero m-bl-3">
+    <section aria-label="hero section" class="hero m-bl-3">
       <div class="container">
         <img
           class="hero-img"
-          src="./images/detail/REST_API_Countries-hero.png"
+          src="../images/detail/REST_API_Countries-hero.png"
           alt="hero image"
         />
       </div>
     </section>
-    <main class="portf-detail-main">
+    <main class="portf-detail-main" aria-label="project description section">
       <div class="container">
         <article class="portf-detail-text borders p-bl-2">
           <h1 class="h1">REST API Countries App</h1>
-          <p class="m-bl-1">
+          <p class="m-bl-1" aria-label="project description">
             This project required me to build a responsive RESTful app that
             pulled data from a 3rd party server. It also had to have a color
             theme switcher. It is built on ReactJS framework. For routing I used
@@ -63,41 +63,59 @@
             for storing app state data. For styling I used SCSS/SASS
             preprocessor. Axios API library was used for making GET requests.
           </p>
-          <aside class="aside">
+          <aside class="aside" aria-label="technologies used for project">
             Interaction Design / Front End Development React / Redux / SASS /
-            Axios
+            Axios / Color Theme Switcher
           </aside>
           <div class="action">
             <a
               href="https://rest-countries-react-redux.netlify.app/"
               class="main-cta"
+              aria-label="link to project website"
             >
               Visit Website
             </a>
           </div>
         </article>
-        <article class="m-bl-2 proj-descr">
+        <article
+          class="m-bl-2 proj-descr"
+          aria-label="project background description"
+        >
           <h2 class="h2 m-bl-1">Project Background</h2>
           <p>
-            This project was a front-end challenge from Frontend Mentor. It’s a
-            platform that enables you to practice building websites to a design
-            and project brief. Each challenge includes mobile and desktop
-            designs to show how the website should look at different screen
-            sizes. Creating these projects has helped me refine my workflow and
-            solve real-world coding problems. I’ve learned something new with
-            each project, helping me to improve and adapt my style.
+            This project allowed me to extend my knowledge of Redux state
+            management system. I also enhanced my skills with React HashRouter
+            and BrowserRouter components. One of the tasks was to include Theme
+            Color Switcher functionality. I have learned different ways to solve
+            this problem as well. The provided design included mobile, tablet
+            and desktop layouts.
           </p>
-          <aside class="m-bl-2">
+          <h2 class="h2 m-bl-1">My workflow included following steps:</h2>
+          <ul class="list-styled" aria-label="my workflow list">
+            <li>Identify semantic parts of the interface</li>
+            <li>Test and build API requesting patterns using Axios</li>
+            <li>Build Redux action creators and reducers</li>
+            <li>Apply API patterns with Redux</li>
+            <li>
+              Identify parts of interface that could be isolated into separate
+              React components
+            </li>
+            <li>Build reusable React components</li>
+            <li>Apply components into appropriate interface parts</li>
+            <li>Style the interface using SCSS preprocessor</li>
+            <li>Refactor the code</li>
+          </ul>
+          <aside class="m-bl-2" aria-label="project preview pictures">
             <h2 class="h2">Static Previews</h2>
             <div class="preview-items">
               <img
                 class="m-bl-1"
-                src="./images/detail/REST_API_Countries-preview1.png"
+                src="../images/detail/REST_API_Countries-preview1.png"
                 alt="portfolio item preview 1"
               />
               <img
                 class="m-bl-1"
-                src="./images/detail/REST_API_Countries-preview2.png"
+                src="../images/detail/REST_API_Countries-preview2.png"
                 alt="portfolio item preview 2"
               />
             </div>
@@ -105,12 +123,15 @@
         </article>
       </div>
     </main>
-    <nav class="portfolio-nav m-bl-3">
+    <nav
+      class="portfolio-nav m-bl-3"
+      aria-label="navigation to next previous portfolio item"
+    >
       <ul class="container">
         <li class="nav-item">
           <a href="#">
             <div class="p-bl-1 borders layout">
-              <img src="./images/icons/arrow-left.svg" alt="arrow left" />
+              <img src="../images/icons/arrow-left.svg" alt="arrow left" />
               <div>
                 <h2 class="h2">Quiz App</h2>
                 <p>Previous Project</p>
@@ -121,7 +142,7 @@
         <li class="nav-item">
           <a href="#">
             <div class="p-bl-1 borders layout reverse">
-              <img src="./images/icons/arrow-right.svg" alt="arrow right" />
+              <img src="../images/icons/arrow-right.svg" alt="arrow right" />
               <div>
                 <h2 class="h2">IP Tracker</h2>
                 <p>Next Project</p>
@@ -131,7 +152,7 @@
         </li>
       </ul>
     </nav>
-    <section class="cooperation">
+    <section class="cooperation" aria-label="cooperation section">
       <div class="container">
         <h2 class="h2 m-bl-2">Interested in doing a project together?</h2>
         <div class="cross-line"></div>
@@ -145,7 +166,7 @@
         <nav class="secondary-navigation" aria-label="secondary-navigation">
           <img
             class="smm-logo"
-            src="./images/icons/logo.svg"
+            src="../images/icons/logo.svg"
             alt="logo image"
           />
 
@@ -159,7 +180,7 @@
               <a href="https://github.com/VFTHV">
                 <img
                   class="smm-logo"
-                  src="./images/icons/github.svg"
+                  src="../images/icons/github.svg"
                   alt="github logo image"
                 />
               </a>
@@ -168,7 +189,7 @@
               <a href="https://www.linkedin.com/in/vadim-fthv/">
                 <img
                   class="smm-logo"
-                  src="./images/icons/linkedin.svg"
+                  src="../images/icons/linkedin.svg"
                   alt="linkedin logo image"
                 />
               </a>

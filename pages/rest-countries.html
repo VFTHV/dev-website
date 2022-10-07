@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <script src="../scripts/script.js" defer></script>
+
+    <title>Vadim F. Web Developer</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <img src="../images/icons/logo.svg" alt="Logo Image" />
+        <img
+          id="mobile-cta"
+          class="mobile-menu"
+          src="../images/icons/hamburger.svg"
+          alt="Open Navigation"
+        />
+
+        <nav id="nav" aria-label="primary-navigation">
+          <div class="mobile-menu-exit">
+            <img
+              src="../images/icons/close.svg"
+              id="mobile-exit"
+              alt="Close Navigation"
+            />
+          </div>
+          <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a class="active" href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./contact.html">Contact Me</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section aria-label="hero section" class="hero m-bl-3">
+      <div class="container">
+        <img
+          class="hero-img"
+          src="../images/detail/REST_API_Countries-hero.png"
+          alt="hero image"
+        />
+      </div>
+    </section>
+    <main class="portf-detail-main" aria-label="project description section">
+      <div class="container">
+        <article class="portf-detail-text borders p-bl-2">
+          <h1 class="h1">REST API Countries App</h1>
+          <p class="m-bl-1" aria-label="project description">
+            This project required me to build a responsive RESTful app that
+            pulled data from a 3rd party server. It also had to have a color
+            theme switcher. It is built on ReactJS framework. For routing I used
+            React-Router-Dom library. I applied Redux state management library
+            for storing app state data. For styling I used SCSS/SASS
+            preprocessor. Axios API library was used for making GET requests.
+          </p>
+          <aside class="aside" aria-label="technologies used for project">
+            Interaction Design / Front End Development React / Redux / SASS /
+            Axios / Color Theme Switcher
+          </aside>
+          <div class="action">
+            <a
+              href="https://rest-countries-react-redux.netlify.app/"
+              class="main-cta"
+              aria-label="link to project website"
+            >
+              Visit Website
+            </a>
+          </div>
+        </article>
+        <article
+          class="m-bl-2 proj-descr"
+          aria-label="project background description"
+        >
+          <h2 class="h2 m-bl-1">Project Background</h2>
+          <p>
+            This project allowed me to extend my knowledge of Redux state
+            management system. I also enhanced my skills with React HashRouter
+            and BrowserRouter components. One of the tasks was to include Theme
+            Color Switcher functionality. I have learned different ways to solve
+            this problem as well. The provided design included mobile, tablet
+            and desktop layouts.
+          </p>
+          <h2 class="h2 m-bl-1">My workflow included following steps:</h2>
+          <ul class="list-styled" aria-label="my workflow list">
+            <li>Identify semantic parts of the interface</li>
+            <li>Test and build API requesting patterns using Axios</li>
+            <li>Build Redux action creators and reducers</li>
+            <li>Apply API patterns with Redux</li>
+            <li>
+              Identify parts of interface that could be isolated into separate
+              React components
+            </li>
+            <li>Build reusable React components</li>
+            <li>Apply components into appropriate interface parts</li>
+            <li>Style the interface using SCSS preprocessor</li>
+            <li>Refactor the code</li>
+          </ul>
+          <aside class="m-bl-2" aria-label="project preview pictures">
+            <h2 class="h2">Static Previews</h2>
+            <div class="preview-items">
+              <img
+                class="m-bl-1"
+                src="../images/detail/REST_API_Countries-preview1.png"
+                alt="portfolio item preview 1"
+              />
+              <img
+                class="m-bl-1"
+                src="../images/detail/REST_API_Countries-preview2.png"
+                alt="portfolio item preview 2"
+              />
+            </div>
+          </aside>
+        </article>
+      </div>
+    </main>
+    <nav
+      class="portfolio-nav m-bl-3"
+      aria-label="navigation to next previous portfolio item"
+    >
+      <ul class="container">
+        <li class="nav-item">
+          <a href="#">
+            <div class="p-bl-1 borders layout">
+              <img src="../images/icons/arrow-left.svg" alt="arrow left" />
+              <div>
+                <h2 class="h2">Quiz App</h2>
+                <p>Previous Project</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="./ip_tracker.html">
+            <div class="p-bl-1 borders layout reverse">
+              <img src="../images/icons/arrow-right.svg" alt="arrow right" />
+              <div>
+                <h2 class="h2">IP Tracker</h2>
+                <p>Next Project</p>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <section class="cooperation" aria-label="cooperation section">
+      <div class="container">
+        <h2 class="h2 m-bl-2">Interested in doing a project together?</h2>
+        <div class="cross-line"></div>
+        <div class="cta-div">
+          <a class="main-cta" href="./contact.html">Contact Me</a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <nav class="secondary-navigation" aria-label="secondary-navigation">
+          <img
+            class="smm-logo"
+            src="../images/icons/logo.svg"
+            alt="logo image"
+          />
+
+          <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./contact.html">Contact Me</a></li>
+          </ul>
+          <ul class="social-links">
+            <li>
+              <a href="https://github.com/VFTHV">
+                <img
+                  class="smm-logo"
+                  src="../images/icons/github.svg"
+                  alt="github logo image"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/vadim-fthv/">
+                <img
+                  class="smm-logo"
+                  src="../images/icons/linkedin.svg"
+                  alt="linkedin logo image"
+                />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
