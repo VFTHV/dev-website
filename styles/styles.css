@@ -276,6 +276,7 @@ p {
   padding: 1rem;
   background-color: rgba(51, 50, 61, 0.1);
   border: none;
+  font-family: Public Sans;
 }
 
 .contact-form .form-item input::-webkit-input-placeholder,

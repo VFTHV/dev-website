@@ -3,6 +3,7 @@ const mobileBtnExit = document.getElementById("mobile-exit");
 const nav = document.querySelector("#nav");
 
 mobileBtn.addEventListener("click", () => {
+  console.log("clicked");
   if (screen.width < 768) {
     nav.classList.add("visible");
   }
@@ -17,12 +18,6 @@ window.addEventListener("click", (e) => {
     nav.classList.remove("visible");
   }
 });
-
-// document.querySelectorAll(".form-item[data-error] input").forEach((inpEl) => {
-//   inpEl.addEventListener("input", () =>
-//     inpEl.parentElement.removeAttribute("data-error")
-//   );
-// });
 
 document.querySelectorAll(".form-item .input-element").forEach((inpEl) => {
   inpEl.addEventListener("input", () => {
