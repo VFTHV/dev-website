@@ -71,6 +71,7 @@ body {
 
 .navbar {
   margin-block: 2.5rem;
+  position: relative;
 }
 
 .navbar .container {
@@ -86,8 +87,7 @@ body {
 }
 
 .navbar nav {
-  display: block;
-  position: fixed;
+  position: absolute;
   right: 0;
   margin-right: 1.5rem;
   display: none;
